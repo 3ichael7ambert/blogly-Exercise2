@@ -10,6 +10,7 @@ db = SQLAlchemy()
 def connect_db(app):
     db.app = app
     db.init_app(app)
+    return db 
 
 
 class User(db.Model):
